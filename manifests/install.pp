@@ -21,7 +21,6 @@ class hubot::install {
 
   group { 'hubot':
     ensure => present,
-    system => true,
   }
 
   user { 'hubot':

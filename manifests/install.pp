@@ -26,7 +26,6 @@ class hubot::install {
   user { 'hubot':
     ensure     => present,
     comment    => 'Hubot Service User',
-    system     => true,
     gid        => 'hubot',
     home       => $::hubot::root_dir,
     shell      => '/bin/bash',
